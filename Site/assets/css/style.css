@@ -1,0 +1,772 @@
+/* Basic Css Foundation*/
+body{
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto auto auto;
+    background-color: tan;
+    font-family: Papyrus, fantasy;
+    }
+    
+    .container{
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 50px;
+    }
+    
+    .imagecontent{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+    grid-column: 1/2;
+    grid-row:1/2;
+    }
+    
+    .submenu
+    {
+        background-color: tan;
+    }
+
+    .mobile
+    {
+        display:none;
+    }
+
+    .navpic
+    {
+        display:none;
+    }
+    
+    .Slideshow
+    {
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+    
+    .content{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows:auto auto;
+    }
+    
+    #about{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    
+    #abouttext{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-indent: 40px;
+        font-size: 20px;
+    }
+    
+    #aboutimg{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width:550px;
+        height:550px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    .comments 
+    {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    
+    
+    footer{
+        text-align: center;
+        font-size: 20px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    /* ---------Foundation Ends Here ----------*/
+    
+    
+    /* CSS Links*/
+    a:link{
+        color:black;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: black;
+        text-decoration: line-through;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    a:active{
+        color:red;
+        text-decoration: none;
+    }
+    /* ---------CSS Links Ends Here ----------*/
+    
+    /* Dropdown Stuff*/
+    .dropdown{
+        display: flex;
+    }
+    /*I used the Codepen from September 15 to help me with the navigation dropdown*/
+    .dropdown ul{
+        display:flex;
+        list-style:none;
+        margin:0px;
+        padding:0px;
+        justify-content:space-around;
+    }
+    
+    .dropdown li{
+        padding:10px;
+        position:relative;
+        list-style:none;
+      }
+    
+    
+    .dropdown .submenu{
+        position:absolute;
+        top:39px;
+        display:none;
+      }
+    
+      .dropdown li:hover .submenu{
+        display:block;
+      }
+    /*------Dropdown Ends-----------*/
+    
+    /* About Me Images*/
+    
+    #aboutmejpg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:75%;
+        height:90%;
+    }
+    
+    #header{
+        width:100px;
+        height:100px;
+    }
+    
+    
+    /*------About Me Images Ends-----------*/
+    
+    /* Comment Section */
+    
+    #rating
+    {
+        width:30px;
+        height:30px;
+    } 
+    #commentBox
+    {
+        max-width:550px;
+        max-height:50px;
+        min-width:550px;
+        min-height:50px
+    }
+    /*------Comment Section Ends-----------*/
+
+
+    /* PR Family Foundation and Images*/
+    
+    .content{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-auto-rows:auto auto;
+    
+    }
+    
+    #prfamilyimg{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:900px;
+        height:850px;
+    }
+    
+    #family{    /* Basic Foundation for Family Layout*/
+        grid-column:1/3;
+        grid-row:1/2;
+    }
+    
+    #familytext{   /* Basic Foundation for Family Layout*/
+        grid-column:1/2;
+        grid-row:2/3;
+        text-indent: 40px;
+        font-size: 20px;
+    }
+    
+    .familyimg{
+        grid-column:2/3;
+        grid-row: 2/3;
+    }
+    
+    #prfamilyimg2{
+        width:450px;
+        height:550px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    /*------PR Family Foundation and Images Ends-----------*/
+    
+    /*PR Place Stuff*/
+    .content{
+        display:grid;
+        grid-template-columns: auto;
+        grid-auto-rows:auto auto auto auto auto auto auto;
+    }
+    
+    #prplacesimg{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        width:1000px;
+        height:700px;
+    }
+    
+    #places{
+        grid-column:1/2;
+        grid-row:1/2;
+        text-decoration: underline;
+    }
+    
+    #place1{
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+    
+    .Place1{   /* Basic Foundation for Place Layout*/
+        grid-column:1/2;
+        grid-row: 3/4;
+        display:flex;
+        flex-direction: row;
+        font-size: 20px;
+        gap:10px;
+    }
+    
+    
+    #place2{
+        grid-column:1/2;
+        grid-row:4/5;
+    }
+    
+    
+    .Place2{  /* Basic Foundation for Place Layout*/
+        grid-column:1/2;
+        grid-row:5/6;
+        display:flex;
+        flex-direction: row;
+        font-size: 20px;
+    }
+    
+    
+    #place3{
+        grid-column:1/2;
+        grid-row:6/7;
+    }
+    
+     
+    .Place3{   /* Basic Foundation for Place Layout*/
+        grid-column: 1/2;
+        grid-row:7/8;
+        display:flex;
+        flex-direction: row;
+        font-size: 20px;
+        gap:10px;
+    }
+    
+    
+    #prplacesimg2{
+        width:300px;
+        height:300px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #prplacesimg3{
+        width:300px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #prplacesimg4{
+        width:300px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    /*------PR Family Foundation and Images Ends-----------*/
+    
+    /*PR Food Here*/
+    .content{
+        display:grid;
+        grid-template-columns: auto;
+        grid-auto-rows:auto auto auto auto auto auto auto;
+    }
+    
+    #prfoodsimg{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:650px;
+        height:850px;
+    }
+    
+    #foods{
+        grid-column:1/2;
+        grid-row:1/2;
+        text-decoration: underline;
+    }
+    
+    #food1{
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+    
+    .Food1{   /* Basic Foundation for Food Layout*/
+        grid-column:1/2;
+        grid-row: 3/4;
+        display:flex;
+        flex-direction: row;
+        font-size: 25px;
+        gap:10px;
+    }
+    
+    
+    #food2{
+        grid-column:1/2;
+        grid-row:4/5;
+    }
+    
+    
+    .Food2{  /* Basic Foundation for Food Layout*/
+        grid-column:1/2;
+        grid-row:5/6;
+        display:flex;
+        flex-direction: row;
+        font-size: 25px;
+    }
+    
+    
+    #food3{
+        grid-column:1/2;
+        grid-row:6/7;
+    }
+    
+     
+    .Food3{   /* Basic Foundation for Food Layout*/
+        grid-column: 1/2;
+        grid-row:7/8;
+        display:flex;
+        flex-direction: row;
+        font-size: 20px;
+        gap:10px;
+    }
+    
+    #foodsimg2{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #foodsimg3{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #foodsimg4{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    /*------PR Food Foundation and Images Ends-----------*/
+    
+    /*DR Place Here*/
+    #drplacesimg2{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #drplacesimg3{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #drplacesimg4{
+        width:400px;
+        height:400px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+    
+    #drplace1{
+       font-size:25px;
+    }
+    
+    #drplace2{
+        font-size:25px;
+    }
+    
+    #drplace3{
+        font-size:25px;
+    }
+    /*------DR Place Foundation and Images Ends-----------*/
+    
+    #chinaexpimg
+    {
+        margin-left:650px;
+        width:550px;
+        height:872px;
+    }
+/* Dark Mode  */
+
+.darkmode
+{
+    background-color: black;
+    color:white;
+}
+
+.darkmode a
+{
+    color:white;
+}
+
+.darkmode .submenu
+{
+    background-color: black;
+}
+
+#dark 
+{
+    background-color: black;
+    color:white;
+}
+
+.darkmode #dark 
+{
+    background-color:white;
+    color:black;
+}
+
+
+@media screen and (max-width:768px)
+{
+
+/* Main Media Query Mobile Layout */
+    body{
+        font-size: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:auto auto auto auto;
+        background-color: tan;
+        font-family: Papyrus, fantasy;
+        }
+
+        .container{
+            position: relative;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            display:grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            row-gap: 50px;
+        }
+
+        .imagecontent{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 20px;
+            grid-column: 1/2;
+            grid-row:1/2;
+            }
+        
+        .dropdown
+        {
+            display:none;
+        }
+        
+            .Slideshow
+        {
+            grid-column:1/2;
+            grid-row:2/3;
+        }
+
+        .content{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display:grid;
+            grid-template-columns: auto;
+            grid-auto-rows:auto auto auto;
+        }
+        
+        #about{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            font-size: 40px;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        #abouttext{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-indent: 40px;
+            font-size: 15px;
+        }
+
+        #aboutimg{
+            display: block;
+            margin-left: auto;
+            margin-right:auto ;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            width:350px;
+            height:350px;
+            box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+        }
+
+        .comments 
+        {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 15px;
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    
+        /* Mobile Navigation */
+        .mobile
+        {
+            display:flex;
+        }
+
+        .mobile a
+        {
+           border:1px solid black;
+           padding: 2px 5px;
+           display: inline-block;
+        }
+
+        .mobile button
+        {
+
+           border:1px solid black;
+           padding: 2px 5px;
+           display: inline-block;
+           color:black;
+           text-decoration: none;
+           background-color: tan;
+           font-size: 15px;
+           font-family: Papyrus, fantasy;
+        }
+
+        
+        .mobile button:hover{
+            text-decoration: underline;
+        }
+        
+        .mobile button:active{
+            color:red;
+            text-decoration: none;
+        }
+
+    /* Hidden Menu Within Mobile Nav*/
+        .mobile #back
+        {
+            display:none;
+        }
+
+        .mobile #PrMobile
+        {
+            display:none;
+        }
+
+        .mobile #PrMobile2
+        {
+            display:none;
+        }
+
+        .mobile #PrMobile3
+        {
+            display:none;
+        }
+
+        .mobile #DrMobile
+        {
+            display:none;
+        }
+
+        .mobile #DrMobile2
+        {
+            display:none;
+        }
+
+        .mobile #DrMobile3
+        {
+            display:none;
+        }
+
+        .mobile #ChinaMobile
+        {
+            display:none;
+        }
+
+        .mobile #ChinaMobile2
+        {
+            display:none;
+        }
+
+        .mobile #ChinaMobile3
+        {
+            display:none;
+        }
+/* Hidden Menu Within Mobile Nav End*/ 
+        #header{
+            width:30px;
+            height:30px;
+            
+        }
+
+        /* Navigation Ends */
+
+    /* Family Mobile Layout */
+    .content{
+        display:grid;
+        grid-template-columns: auto;
+        grid-auto-rows:auto auto auto;
+    
+    }
+    
+    #prfamilyimg{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:600px;
+        height:550px;
+    }
+    
+    #family{   
+        grid-column:1/2;
+        grid-row:1/2;
+    }
+    
+    #familytext{   
+        grid-column:1/2;
+        grid-row:2/3;
+        text-indent: 40px;
+        font-size: 15px;
+    }
+    
+    .familyimg{
+        grid-column:1/2;
+        grid-row: 3/4;
+    }
+    
+    #prfamilyimg2{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:450px;
+        height:550px;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+
+    /* Place Mobile Layout */
+
+    #prplacesimg{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        width:600px;
+        height:300px;
+    }
+
+    .content{
+        display:grid;
+        grid-template-columns: auto;
+        grid-auto-rows:auto auto auto auto auto auto auto;
+    }
+    
+    #prplacesimg{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        width:700px;
+        height:400px;
+    }
+    
+    #places{
+        grid-column:1/2;
+        grid-row:1/2;
+        text-decoration: underline;
+    }
+    
+    #place1{
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+    
+    .Place1{   /* Basic Foundation for Place Layout*/
+        grid-column:1/2;
+        grid-row: 3/4;
+        display:flex;
+        flex-direction: row;
+        font-size: 15px;
+        gap:10px;
+    }
+    
+    
+    #place2{
+        grid-column:1/2;
+        grid-row:4/5;
+    }
+    
+    
+    .Place2{  /* Basic Foundation for Place Layout*/
+        grid-column:1/2;
+        grid-row:5/6;
+        display:flex;
+        flex-direction: row;
+        font-size: 15px;
+    }
+    
+    
+    #place3{
+        grid-column:1/2;
+        grid-row:6/7;
+    }
+    
+     
+    .Place3{   /* Basic Foundation for Place Layout*/
+        grid-column: 1/2;
+        grid-row:7/8;
+        display:flex;
+        flex-direction: row;
+        font-size: 15px;
+        gap:10px;
+    }
+
+}
+    
+    
+    
