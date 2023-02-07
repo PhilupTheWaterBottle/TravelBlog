@@ -15,7 +15,7 @@
     <h2 id="food1">Tostones:</h2>
     <div class="Food1">
         <p>Tostones are delicious fried plantains that I’ve had the pleasure of eating since I was a kid. I usually would eat tostones with Mayoketchup which is mayonnaise mixed with ketchup and sometimes onions.</p>
-        <img src="../assets/images/tostones.jpg" alt="Tostones"  id="foodsimg2">
+        <img src="../assets/images/PrImgs/tostones.jpg" alt="Tostones"  id="foodsimg2">
      
     </div>
     <h2 id="food2">Tres Leches:</h2>

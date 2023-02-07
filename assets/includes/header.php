@@ -11,6 +11,7 @@
         $dr = "/DR/";
         $china = "/China/";
         $navimgpath = "/assets/images/navimage/";
+        $navend = ".png";
     ?>
 </head>
 <body>
@@ -27,7 +28,7 @@
             <nav class="dropdown"> 
                 <li>
                 <a href="">
-                    <img src="<?php echo $path.$navimgpath.$nav?>" alt="Navigation Image" id="header"> 
+                    <img src="<?php echo $path.$navimgpath.$nav.$navend?>" alt="Navigation Image" id="header"> 
                 </a>
                 </li>
 
