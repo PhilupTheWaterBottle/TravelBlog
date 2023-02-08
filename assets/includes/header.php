@@ -73,18 +73,13 @@
                 <li>
                 <a href="https://docs.google.com/document/d/1yKma-G6SXkDK9UJrawDzZN751pieA5E2-W8PAs4qXwA/edit?usp=sharing">Work Cited</a>
                 </li>
-                |
-                <li>
-                <a href="https://docs.google.com/document/d/1SEsK8uvY4DLIIZE18owU0b_XFAqYEL9WBw9bfMG1_-o/edit?usp=sharing">Grade Page</a>
-                </li>
-
                 <li>
                     <button id ="dark"onclick="darkness()">DarkMode</button>
                 </li>
             </nav>
 
         <nav class="mobile">
-        <img src="<?php echo $path.$navimgpath.$nav?>" alt="Navigation Image" id="header"> 
+        <img src="<?php echo $path.$navimgpath.$nav.$navend?>" alt="Navigation Image" id="header"> 
             <a id="Homelink" href="<?php echo $path ?>index.php">Home</a>
             <button id="back" onclick="Back()">Back</button>
             <button id="PrButton" onclick="PR()">Puerto Rico</button>
