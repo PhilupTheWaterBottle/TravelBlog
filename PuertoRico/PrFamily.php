@@ -16,7 +16,7 @@
         <p id="familytext">A majority of my mother’s family lives in Puerto Rico. Mainly however my grandparents, aunt, and 3 cousins live in Puerto Rico. My family lives in Camuy and this is usually where I stay when I visit. Camuy is a very small area of Puerto Rico surrounded by many forests and wildlife. Where my family lives there’s many mountains and farms. Most of the roads are on the sides of mountains and hills, making for an interesting drive. Puerto Rico is much different from living in America. The community around where my family lives and in the country in general is very tight knit and strong.  </p>
 
         <div class="familyimg">
-        <img src="../assets/images/prfamilyimg2.JPG" alt="My family at a bowling ally"  id="prfamilyimg2">
+        <img src="../assets/images/PrImgs/prfamilyimg2.JPG" alt="My family at a bowling ally"  id="prfamilyimg2">
         </div>
     </div>
 
