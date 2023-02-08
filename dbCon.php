@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli('localhost', 'ps23', 'overcooked7198_dairymaid', 'ps23');
+    $mysqli = new mysqli('mysql.csh.rit.edu', 'ps23', 'overcooked7198_dairymaid', 'ps23');
 
     if(mysqli_connect_errno())
     {
