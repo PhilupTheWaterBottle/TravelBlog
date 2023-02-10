@@ -21,7 +21,7 @@
     </div>
 
     <?php 
-    include($path.'assets/includes/comments.php'); 
+    //include($path.'assets/includes/comments.php'); 
     include($path.'assets/includes/footer.php'); 
     ?> 
 
