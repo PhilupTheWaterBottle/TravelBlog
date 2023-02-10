@@ -1,5 +1,5 @@
 <?php
-    $mysql = new mysqli('mysql.csh.rit.edu', 'ps23', 'overcooked7198_dairymaid', 'ps23','3306');
+    $mysqli = new mysqli('mysql.csh.rit.edu', 'ps23', 'overcooked7198_dairymaid', 'ps23','3306');
 
     if(mysqli_connect_errno())
     {

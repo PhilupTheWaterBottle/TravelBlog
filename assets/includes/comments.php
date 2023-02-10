@@ -1,6 +1,6 @@
 <?php
 	include($path."dbCon.php");
-	if ($mysql)
+	if ($mysqli)
 	{
 		if(!empty($_GET['fullname']) && !empty($_GET['inputComment']) && !empty($_GET['inputRating'])){
 	
